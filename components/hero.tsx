@@ -30,7 +30,7 @@ export function Hero() {
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="gradient-text">Handcrafted</span>
               <br />
-              <span className="text-gray-800">Excellence</span>
+              <span className="text-gray-800">Hamparaa</span>
               <br />
               <span className="text-gray-600 text-3xl lg:text-4xl">Delivered to You</span>
             </h1>

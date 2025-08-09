@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge'
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const logo="https://files.edgestore.dev/s9z7ph3133ekjd7k/publicFiles/_public/0f302db2-8b9e-4af0-8993-5d3a238e50bc.png"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,10 +50,10 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C&S</span>
+                {logo?<img src="https://files.edgestore.dev/s9z7ph3133ekjd7k/publicFiles/_public/0f302db2-8b9e-4af0-8993-5d3a238e50bc.png" alt=""/>:<span className="text-white font-bold text-xl">C&S</span>}
               </div>
               <div>
-                <h1 className="text-2xl font-bold gradient-text">Craft & Style</h1>
+                <h1 className="text-2xl font-bold gradient-text">𝐇𝐀𝐌𝐏𝐀𝐑𝐀𝐀</h1>
                 <p className="text-xs text-gray-500">Premium Handcrafted</p>
               </div>
             </Link>
