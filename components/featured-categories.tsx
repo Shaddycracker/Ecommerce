@@ -4,30 +4,30 @@ import { ArrowRight } from 'lucide-react'
 
 const categories = [
   {
-    name: 'Jewelry & Accessories',
-    description: 'Handcrafted rings, necklaces, and unique accessories',
-    image: '/placeholder.svg?height=300&width=400&text=Jewelry',
+    name: 'Gift Bouquets',
+    description: 'On-demand custom bouquets and thoughtful handcrafted gestures to surprise your loved ones, all within your budget.',
+    image: 'http://files.edgestore.dev/s9z7ph3133ekjd7k/naziya/_public/609ef173-c71c-4751-ae01-e3fff45fe6ce.png',
     count: '120+ items',
     color: 'from-purple-500 to-pink-500'
   },
   {
-    name: 'Home & Decor',
-    description: 'Beautiful pottery, vases, and home decorations',
-    image: '/placeholder.svg?height=300&width=400&text=Home+Decor',
+    name: 'Photo Frame & Gift Design',
+    description: 'Beautifully crafted photo frames and custom gift designs, perfect for celebrating special moments.',
+    image: 'https://files.edgestore.dev/s9z7ph3133ekjd7k/naziya/_public/f0799f91-d783-418c-8672-c7f69d23ca14.png',
     count: '85+ items',
     color: 'from-blue-500 to-cyan-500'
   },
   {
-    name: 'Textiles & Fabrics',
-    description: 'Handwoven scarves, bags, and textile art',
-    image: '/placeholder.svg?height=300&width=400&text=Textiles',
+    name: 'Gift Box',
+    description: 'A box filled with selected items, perfect for gifting on any occasion.',
+    image: 'https://betweenboxes.in/cdn/shop/products/GiftHamperformarriedfriends.jpg?v=1678712195&width=1500',
     count: '95+ items',
     color: 'from-green-500 to-emerald-500'
   },
   {
-    name: 'Woodwork & Crafts',
-    description: 'Carved sculptures, furniture, and wooden art',
-    image: '/placeholder.svg?height=300&width=400&text=Woodwork',
+    name: 'Paper Design & Crafts',
+    description: 'Beautiful paper designs and handcrafted crafts for gifting and decoration.',
+    image: 'https://files.edgestore.dev/s9z7ph3133ekjd7k/naziya/_public/5bd5944f-6b34-4934-ba17-4c0916ef2c6a.png',
     count: '60+ items',
     color: 'from-amber-500 to-orange-500'
   }
@@ -57,7 +57,7 @@ export function FeaturedCategories() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
-                  
+
                   {/* Category badge */}
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/90 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
@@ -65,7 +65,7 @@ export function FeaturedCategories() {
                     </span>
                   </div>
                 </div>
-                
+
                 <CardContent className="p-6">
                   <h3 className="font-bold text-xl mb-2 group-hover:text-amber-600 transition-colors">
                     {category.name}
@@ -73,7 +73,7 @@ export function FeaturedCategories() {
                   <p className="text-gray-600 mb-4 line-clamp-2">
                     {category.description}
                   </p>
-                  
+
                   <div className="flex items-center text-amber-600 font-semibold group-hover:text-amber-700 transition-colors">
                     <span>Explore Collection</span>
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

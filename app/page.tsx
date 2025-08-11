@@ -12,14 +12,14 @@ export default function Home() {
       <Header />
       <Hero />
       <FeaturedCategories />
-      
+
       <main className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Featured <span className="gradient-text">Products</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover our most popular handcrafted pieces, each one carefully selected for its exceptional quality and unique design.
+          <p className="text-sm sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore our most-loved hampers and creations — from chocolate-filled delights to paper-crafted designs, all made to impress.
           </p>
         </div>
         <Suspense fallback={
@@ -36,7 +36,7 @@ export default function Home() {
           <ProductGrid />
         </Suspense>
       </main>
-      
+
       <Testimonials />
       <Footer />
     </div>
